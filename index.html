@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="description" content="Personal Investing Model Factory Dashboard" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Model Factory Hub Lite</title>
+</head>
+<body>
+  <noscript>ต้องเปิด JavaScript เพื่อใช้งาน Dashboard นี้ครับ</noscript>
+  <div id="app" class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <div class="brand">
+        <div class="brand-mark">MF</div>
+        <div>
+          <h1>Model Factory</h1>
+          <p>Hub Lite</p>
+        </div>
+      </div>
+      <nav class="nav" id="nav"></nav>
+      <div class="sidebar-footer">
+        <span class="status-dot"></span>
+        <span>Local mock data mode</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Investing Command Center</p>
+          <h2 id="page-title">Dashboard</h2>
+        </div>
+        <div class="topbar-actions">
+          <button class="ghost-btn" id="toggle-theme" type="button">Toggle theme</button>
+          <button class="primary-btn" id="quick-health" type="button">System Health</button>
+        </div>
+      </header>
+
+      <section id="content" class="content" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <div id="modal-root" class="modal-root hidden" role="dialog" aria-modal="true"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
